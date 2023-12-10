@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+  
+    <link href="../css/chat.css" rel="stylesheet" />
+    <title>Online Chatting</title>
+
+    <script src="../lib/signalr.js/signalr.min.js"></script>
+    <script src="../js/Chat.js"></script>
+
+</head>
+<body>
+    
+        <div class="container content">
+            <div class="row">
+                <div id="publicTalk" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">Chat</div>
+                        <div class="card-body height3">
+                            <ul id="conversation" class="chat-list">
+                                <li class="in">
+                                    <div class="chat-img">
+                                        <img alt="Avtar" src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg">
+                                             </div>
+                                    <div class="chat-body">
+                                        <div class="chat-message">
+                                            <input type="text" id="messageInp" style="border:none"/>
+                                            <input type="submit" id="sendMessageBtn" value="Send" />
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="card" style="margin-top: 300px;">
+            <div class="card-header text-center">Group Chatting</div>
+            <div id="groupConversation" class="card-body height3">
+                <ul id="groupConversationUL" class="chat-list">
+                    <li class="in">
+                        <div class="chat-img">
+                            <img alt="Avtar" src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg">
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-message">
+                                <input type="text" id="groupNameInp" />
+                                <input type="submit" id="joinGroupBtn" value="Join" />
+                            </div>
+                            <br />
+                            <div class="chat-message" style="margin-top: 10px;">
+                                <input type="text" id="messageToGroupInp" />
+                                <input type="submit" id="sendMessageToGroupBtn" value="Send To Group" />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+                </div>
+    </div>
+</body>
+</html>
